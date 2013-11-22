@@ -14,6 +14,11 @@
 
 @implementation FirstViewController
 
+- (void) getLocation:(id)sender{
+// do nothing yet
+
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
