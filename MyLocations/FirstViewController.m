@@ -24,11 +24,17 @@
     return self;
 }
 
-- (void) getLocation:(id)sender{
-// do nothing yet
-
+- (void) getLocation:(id)sender
+{
+    //tells the location manager that the VC is its delegate
+    _locationManager.delegate = self;
+    //wants locations with an accuracy of 10 meters
+    _locationManager.desiredAccuracy =
+    kCLLocationAccuracyNearestTenMeters;
+    //Then you start the location manager and from that moment on it will send location updates to the delegate, i.e. the view controller
+    [_locationManager startUpdatingLocation];
 }
-
+    
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -39,6 +45,18 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - CLLocationManagerDelegate
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
+{
+    NSLog(@"didFailWithError %@", error);
+}
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    CLLocation *newLocation = [locations lastObject];
+    NSLog(@"didUpdateLocations %@", newLocation);
 }
 
 @end
