@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B235916D183FD2EE00A8F511 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B235916C183FD2EE00A8F511 /* CoreLocation.framework */; };
 		B2CC770D183FADE000CDB0CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CC770C183FADE000CDB0CB /* Foundation.framework */; };
 		B2CC770F183FADE000CDB0CB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CC770E183FADE000CDB0CB /* CoreGraphics.framework */; };
 		B2CC7711183FADE000CDB0CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CC7710183FADE000CDB0CB /* UIKit.framework */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B235916C183FD2EE00A8F511 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		B2CC7709183FADE000CDB0CB /* MyLocations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLocations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2CC770C183FADE000CDB0CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B2CC770E183FADE000CDB0CB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B235916D183FD2EE00A8F511 /* CoreLocation.framework in Frameworks */,
 				B2CC770F183FADE000CDB0CB /* CoreGraphics.framework in Frameworks */,
 				B2CC7711183FADE000CDB0CB /* UIKit.framework in Frameworks */,
 				B2CC770D183FADE000CDB0CB /* Foundation.framework in Frameworks */,
@@ -104,6 +107,7 @@
 		B2CC770B183FADE000CDB0CB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B235916C183FD2EE00A8F511 /* CoreLocation.framework */,
 				B2CC770C183FADE000CDB0CB /* Foundation.framework */,
 				B2CC770E183FADE000CDB0CB /* CoreGraphics.framework */,
 				B2CC7710183FADE000CDB0CB /* UIKit.framework */,
@@ -388,6 +392,7 @@
 				GCC_PREFIX_HEADER = "MyLocations/MyLocations-Prefix.pch";
 				INFOPLIST_FILE = "MyLocations/MyLocations-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -401,6 +406,7 @@
 				GCC_PREFIX_HEADER = "MyLocations/MyLocations-Prefix.pch";
 				INFOPLIST_FILE = "MyLocations/MyLocations-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
