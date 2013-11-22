@@ -13,6 +13,16 @@
 @end
 
 @implementation FirstViewController
+// instance variable
+{
+    CLLocationManager *_locationManager;
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    if ((self = [super initWithCoder:aDecoder])) { _locationManager = [[CLLocationManager alloc] init];
+    }
+    return self;
+}
 
 - (void) getLocation:(id)sender{
 // do nothing yet
